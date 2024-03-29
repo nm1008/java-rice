@@ -35,7 +35,7 @@ public class Encapsulation {
 	}
 
 	public void increaseSpeed(int howMuch) {
-//		this.speed = this.speed + howMuch;
+//		this.speed = this.speed + howMuch; //same as decreaseSpeed
 		setSpeed(this.speed + howMuch);
 	}
 

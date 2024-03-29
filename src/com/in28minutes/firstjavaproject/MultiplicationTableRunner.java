@@ -29,8 +29,8 @@ public class MultiplicationTableRunner {
 //		ducati.setSpeed(250);
 //		ducati.start();
 
-		Encapsulation ducati = new Encapsulation("Ducati");
-		Encapsulation honda = new Encapsulation("Honda");
+//		Encapsulation ducati = new Encapsulation("Ducati");
+//		Encapsulation honda = new Encapsulation("Honda");
 
 //		ducati.start();
 //		System.out.println(ducati.getName());
@@ -43,7 +43,20 @@ public class MultiplicationTableRunner {
 //		ducati.setSpeed(1);
 //		ducati.increaseSpeed(149);
 //		ducati.start();
-		ducati.decreaseSpeed(200);
-		ducati.start();
+//		ducati.decreaseSpeed(200);
+//		ducati.start();
+
+//		StudentGrades grade = new StudentGrades(39);
+//		grade.start();
+//
+//		System.out.println(grade.assignGrade());
+
+//		char letterGrade = grade.assignGrade();
+//		System.out.println("Letter Grade: " + letterGrade);
+
+		WeatherAdviser temperature = new WeatherAdviser(30);
+
+		System.out.println(temperature.Forecast());
+
 	}
 }
