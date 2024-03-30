@@ -65,4 +65,16 @@ public class StudentMarks {
 	public String getStudentMarks() {
 		return this.name + marks;
 	}
+
+	public void addNewMark(int mark) {
+		marks.add(mark);
+	}
+
+	public void removeMarkAtIndex(int index) {
+		marks.remove(index);
+	}
+
+	public void clearStudentMarks() {
+		marks.clear();
+	}
 }

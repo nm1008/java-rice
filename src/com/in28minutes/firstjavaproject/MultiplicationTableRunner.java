@@ -61,12 +61,18 @@ public class MultiplicationTableRunner {
 		StudentMarks student = new StudentMarks("Nikko", new int[] { 92, 93, 100 });
 		student.start();
 
-		System.out.println("Min grade is: " + student.getMinimumMark());
-		System.out.println("Max grade is: " + student.getMaxmimumMark());
-		System.out.println("Total sum is: " + student.getTotalSumOfMarks());
-		System.out.println("Number of grades: " + student.getNumberOfMarks());
-		System.out.println("Total average grade: " + student.getAverageMarks());
-		System.out.println(student.getStudentMarks());
+//		System.out.println("Min grade is: " + student.getMinimumMark());
+//		System.out.println("Max grade is: " + student.getMaxmimumMark());
+//		System.out.println("Total sum is: " + student.getTotalSumOfMarks());
+//		System.out.println("Number of grades: " + student.getNumberOfMarks());
+//		System.out.println("Total average grade: " + student.getAverageMarks());
 
+		System.out.println(student.getStudentMarks());
+		student.addNewMark(96);
+		System.out.println(student.getStudentMarks());
+		student.removeMarkAtIndex(3);
+		System.out.println(student.getStudentMarks());
+		student.clearStudentMarks();
+		System.out.println(student.getStudentMarks());
 	}
 }
