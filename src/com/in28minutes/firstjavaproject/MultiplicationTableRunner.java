@@ -66,6 +66,7 @@ public class MultiplicationTableRunner {
 		System.out.println("Total sum is: " + student.getTotalSumOfMarks());
 		System.out.println("Number of grades: " + student.getNumberOfMarks());
 		System.out.println("Total average grade: " + student.getAverageMarks());
+		System.out.println(student.getStudentMarks());
 
 	}
 }
