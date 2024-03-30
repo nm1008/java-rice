@@ -54,9 +54,18 @@ public class MultiplicationTableRunner {
 //		char letterGrade = grade.assignGrade();
 //		System.out.println("Letter Grade: " + letterGrade);
 
-		WeatherAdviser temperature = new WeatherAdviser(30);
+//		WeatherAdviser temperature = new WeatherAdviser(30);
+//
+//		System.out.println(temperature.Forecast());
 
-		System.out.println(temperature.Forecast());
+		StudentMarks student = new StudentMarks("Nikko", new int[] { 92, 93, 100 });
+		student.start();
+
+		System.out.println("Min grade is: " + student.getMinimumMark());
+		System.out.println("Max grade is: " + student.getMaxmimumMark());
+		System.out.println("Total sum is: " + student.getTotalSumOfMarks());
+		System.out.println("Number of grades: " + student.getNumberOfMarks());
+		System.out.println("Total average grade: " + student.getAverageMarks());
 
 	}
 }
