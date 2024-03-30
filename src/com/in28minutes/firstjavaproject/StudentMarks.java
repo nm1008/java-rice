@@ -1,14 +1,18 @@
 package com.in28minutes.firstjavaproject;
 
+import java.util.ArrayList;
+
 public class StudentMarks {
 
 	private String name;
-	private int[] listOfMarks;
+	private ArrayList<Integer> marks = new ArrayList<Integer>();
 
 	// constructor
-	public StudentMarks(String name, int[] listOfMarks) {
+	public StudentMarks(String name, int... listOfMarks) {
 		this.name = name;
-		this.listOfMarks = listOfMarks;
+		for (int mark : listOfMarks) {
+			this.marks.add(mark);
+		}
 	}
 
 	void start() {
@@ -16,33 +20,33 @@ public class StudentMarks {
 	}
 
 	public int getNumberOfMarks() {
-		return listOfMarks.length;
+		return marks.size();
 	}
 
 	public int getTotalSumOfMarks() {
 		int sum = 0;
 
-		for (int i = 0; i < listOfMarks.length; i++) {
-			sum += listOfMarks[i];
+		for (int i = 0; i < marks.size(); i++) {
+			sum += marks.get(i);
 		}
 		return sum;
 	}
 
 	public int getMaxmimumMark() {
 		int max = 0;
-		for (int i = 0; i < listOfMarks.length; i++) {
-			if (max < listOfMarks[i]) {
-				max = listOfMarks[i];
+		for (int i = 0; i < marks.size(); i++) {
+			if (max < marks.get(i)) {
+				max = marks.get(i);
 			}
 		}
 		return max;
 	}
 
 	public int getMinimumMark() {
-		int min = listOfMarks[0];
-		for (int i = 0; i < listOfMarks.length; i++) {
-			if (min > listOfMarks[i]) {
-				min = listOfMarks[i];
+		int min = marks.get(0);
+		for (int i = 0; i < marks.size(); i++) {
+			if (min > marks.get(i)) {
+				min = marks.get(i);
 			}
 		}
 		return min;
